@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(135deg, #ecd8b7, #e0f7fa);
+    color: #333;
+    transition: 0.4s;
+}
+
+body.dark {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #f0f0f0;
+}
+
+/* HEADER - Fundo Azul */
+.navbar {
+    padding: 1.2rem 5%;
+    background: #1e40af;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.rainbow-logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    /* Cores Pastel Arco-Íris */
+    background: linear-gradient(90deg, 
+        #ff9aa2, 
+        #ffb347, 
+        #ffff9f, 
+        #a8e6cf, 
+        #a2c4e0, 
+        #b5a2e0, 
+        #e0a8d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Botão Tema */
+.theme-btn {
+    background: rgba(255,255,255,0.25);
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-btn:hover { background: rgba(255,255,255,0.4); }
+
+/* HERO */
+.hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(135deg, #ffe4e1, #e0f7fa);
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 5.5rem;
+    /* Cores Pastel Arco-Íris */
+    background: linear-gradient(90deg, 
+        #ff9aa2, 
+        #ffb347, 
+        #ffff9f, 
+        #a8e6cf, 
+        #a2c4e0, 
+        #b5a2e0, 
+        #e0a8d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.7rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #334155;
+}
+
+/* Seções */
+.section {
+    padding: 5rem 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.newton-title     { color: #1e40af; }
+.science-title    { color: #3b82f6; }
+.experiments-title{ color: #ec4899; }
+.tech-title       { color: #8b5cf6; }
+.curiosities-title{ color: #f97316; }
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-12px); }
+
+.card1 { background: #e0f2fe; }
+.card2 { background: #f3e8ff; }
+.card3 { background: #fef3c7; }
+.card4 { background: #ecfdf5; }
+.card5 { background: #fee2e2; }
+.card6 { background: #e0f2fe; }
+
+footer {
+    background: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero-title { font-size: 4rem; }
+}
